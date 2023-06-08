@@ -1,17 +1,17 @@
-.glarity--container.gpt--dark {
-  .glarity--chatgpt {
+.nectargpt--container.gpt--dark {
+  .nectargpt--chatgpt {
     color: white;
     border-color: #3c4043;
     background-color: #0d1117;
 
-    .glarity--main__loading {
+    .nectargpt--main__loading {
       background-color: #0d1117;
     }
   }
 
-  .glarity--header,
-  .glarity--main__header a,
-  a.glarity--header__logo {
+  .nectargpt--header,
+  .nectargpt--main__header a,
+  a.nectargpt--header__logo {
     color: #fff;
 
     &:visited {
@@ -19,15 +19,15 @@
     }
   }
 
-  .glarity--main {
+  .nectargpt--main {
     border-top-color: #3c4043;
   }
 
-  .glarity--main__header {
+  .nectargpt--main__header {
     border-bottom-color: #3c4043;
   }
 
-  .glarity--main__container {
+  .nectargpt--main__container {
     color: #eee;
 
     a {

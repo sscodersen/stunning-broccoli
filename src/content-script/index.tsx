@@ -22,7 +22,7 @@ async function Run() {
       .join('|'),
   )
   const container = document.createElement('section')
-  container.className = 'glarity--summary'
+  container.className = 'nectargpt--summary'
   document.body.prepend(container)
   render(
     <PageSummary
@@ -44,8 +44,8 @@ async function Run() {
     switch (type) {
       case 'CHATGPT_TAB_CURRENT': {
         const container = document.createElement('section')
-        container.className = 'glarity--chatgpt--tips'
-        container.id = 'glarity--chatgpt--tips'
+        container.className = 'nectargpt--chatgpt--tips'
+        container.id = 'nectargpt--chatgpt--tips'
         document.body.prepend(container)
         render(<ChatGPTTip isLogin={data.isLogin} />, container)
         break

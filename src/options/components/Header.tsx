@@ -4,12 +4,12 @@ import logo from '@/assets/img/logo.png'
 function Header() {
   return (
     <>
-      <nav className="glarity--flex glarity--flex-row glarity--justify-between glarity--items-center glarity--mt-5 glarity--px-2">
-        <div className="glarity--flex glarity--flex-row glarity--items-center glarity--gap-2">
-          <a href="https://glarity.app/" target="_blank" rel="noreferrer">
+      <nav className="nectargpt--flex nectargpt--flex-row nectargpt--justify-between nectargpt--items-center nectargpt--mt-5 nectargpt--px-2">
+        <div className="nectargpt--flex nectargpt--flex-row nectargpt--items-center nectargpt--gap-2">
+          <a href="https://nectargpt.app/" target="_blank" rel="noreferrer">
             <img
               src={logo}
-              className="glarity--w-10 glarity--h-10 glarity--rounded-lg"
+              className="nectargpt--w-10 nectargpt--h-10 nectargpt--rounded-lg"
               style={{ 'vertical-align': 'middle' }}
             />
             <span className="font-semibold">
@@ -18,7 +18,7 @@ function Header() {
             </span>{' '}
           </a>
         </div>
-        <div className="glarity--flex glarity--flex-row glarity--gap-3">
+        <div className="nectargpt--flex nectargpt--flex-row nectargpt--gap-3">
           <a href="https://discord.gg/JEJExVuWVM" target="_blank" rel="noreferrer">
             Discord
           </a>
@@ -29,7 +29,7 @@ function Header() {
           >
             Feedback
           </a>
-          <a href="https://twitter.com/Glarity_summary" target="_blank" rel="noreferrer">
+          <a href="https://twitter.com/Nectargpt_summary" target="_blank" rel="noreferrer">
             Twitter
           </a>
           <a

@@ -1,14 +1,14 @@
-.glarity--popup {
-  .glarity--chatgpt {
+.nectargpt--popup {
+  .nectargpt--chatgpt {
     border: none;
   }
 
-  .glarity--container #gpt-answer.markdown-body.gpt-markdown .glarity--chatgpt--header {
+  .nectargpt--container #gpt-answer.markdown-body.gpt-markdown .nectargpt--chatgpt--header {
     margin-top: 0 !important;
   }
 }
 
-.glarity--popup--card {
+.nectargpt--popup--card {
   // margin-top: 10px;
 
   .content {

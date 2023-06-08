@@ -44,7 +44,7 @@ async function createTab(url) {
     const tab = tabs[0]
 
     if (tab.id) {
-      Browser.storage.local.set({ glarityTabId: tab.id })
+      Browser.storage.local.set({ nectargptTabId: tab.id })
     }
   })
 
@@ -92,10 +92,10 @@ Browser.runtime.onMessage.addListener(async (message) => {
   } else if (message.type === 'NEW_TAB') {
     return createTab(message.data.url)
   } else if (message.type === 'GO_BACK') {
-    const tab = await Browser.storage.local.get('glarityTabId')
+    const tab = await Browser.storage.local.get('nectargptTabId')
 
-    if (tab.glarityTabId) {
-      Browser.tabs.update(tab.glarityTabId, { active: true }).catch(() => {
+    if (tab.nectargptTabId) {
+      Browser.tabs.update(tab.nectargptTabId, { active: true }).catch(() => {
         Browser.tabs.create({ url: 'about:newtab', active: true })
       })
     } else {

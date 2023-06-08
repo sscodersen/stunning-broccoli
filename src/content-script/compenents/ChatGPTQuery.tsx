@@ -129,14 +129,14 @@ function ChatGPTQuery(props: Props) {
   if (answer) {
     return (
       <div className="markdown-body gpt-markdown" id="gpt-answer" dir="auto">
-        <div className="glarity--chatgpt--header">
+        <div className="nectargpt--chatgpt--header">
           <ChatGPTFeedback
             messageId={answer.messageId}
             conversationId={answer.conversationId}
             answerText={answer.text}
           />
         </div>
-        <div className="glarity--chatgpt--content" ref={wrapRef}>
+        <div className="nectargpt--chatgpt--content" ref={wrapRef}>
           <ReactMarkdown rehypePlugins={[[rehypeHighlight, { detect: true }]]}>
             {answer.text}
           </ReactMarkdown>
@@ -150,7 +150,7 @@ function ChatGPTQuery(props: Props) {
         )}
 
         {/* {done && showTip && (
-          <p className="glarity--italic glarity--mt-2">
+          <p className="nectargpt--italic nectargpt--mt-2">
             Enjoy this extension? Give us a 5-star rating at{' '}
             <a
               href="https://chatgpt4google.com/chrome?utm_source=rating_tip"
@@ -172,7 +172,7 @@ function ChatGPTQuery(props: Props) {
           <>
             Please set OpenAI API Key in the{' '}
             <button
-              className={classNames('glarity--btn', 'glarity--btn__primary', 'glarity--btn__small')}
+              className={classNames('nectargpt--btn', 'nectargpt--btn__primary', 'nectargpt--btn__small')}
               onClick={openOptionsPage}
             >
               extension options
@@ -184,7 +184,7 @@ function ChatGPTQuery(props: Props) {
             {' '}
             Please login and pass Cloudflare check at{' '}
             <button
-              className={classNames('glarity--btn', 'glarity--btn__primary', 'glarity--btn__small')}
+              className={classNames('nectargpt--btn', 'nectargpt--btn__primary', 'nectargpt--btn__small')}
               onClick={newTab}
             >
               chat.openai.com
@@ -198,7 +198,7 @@ function ChatGPTQuery(props: Props) {
           (() => {
             if (isBraveBrowser()) {
               return (
-                <span className="glarity--block glarity--mt-2">
+                <span className="nectargpt--block nectargpt--mt-2">
                   Still not working? Follow{' '}
                   <a href="https://github.com/sparticleinc/chatgpt-google-summary-extension#troubleshooting">
                     Brave Troubleshooting
@@ -207,14 +207,14 @@ function ChatGPTQuery(props: Props) {
               )
             } else {
               return (
-                <span className="glarity--italic glarity--block glarity--mt-2 glarity--text-xs">
+                <span className="nectargpt--italic nectargpt--block nectargpt--mt-2 nectargpt--text-xs">
                   OpenAI requires passing a security check every once in a while. If this keeps
                   happening, change AI provider to OpenAI API in the{' '}
                   <button
                     className={classNames(
-                      'glarity--btn',
-                      'glarity--btn__primary',
-                      'glarity--btn__small',
+                      'nectargpt--btn',
+                      'nectargpt--btn__primary',
+                      'nectargpt--btn__small',
                     )}
                     onClick={openOptionsPage}
                   >
@@ -232,7 +232,7 @@ function ChatGPTQuery(props: Props) {
     return (
       <p>
         Failed to load response from ChatGPT:
-        <span className="glarity--break-all glarity--block">{error}</span>
+        <span className="nectargpt--break-all nectargpt--block">{error}</span>
         <a
           href="javascript:void(0)"
           onClick={() => {
@@ -245,7 +245,7 @@ function ChatGPTQuery(props: Props) {
         <br />
         If this keeps happening, change AI provider to OpenAI API in the{' '}
         <button
-          className={classNames('glarity--btn', 'glarity--btn__primary', 'glarity--btn__small')}
+          className={classNames('nectargpt--btn', 'nectargpt--btn__primary', 'nectargpt--btn__small')}
           onClick={openOptionsPage}
         >
           extension options

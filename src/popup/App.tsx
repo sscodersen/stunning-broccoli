@@ -31,17 +31,17 @@ function App() {
   }, [])
 
   return (
-    <div className="glarity--flex glarity--flex-col glarity--h-full glarity--popup">
-      <div className="glarity--mb-1 glarity--flex glarity--flex-row glarity--items-center glarity--px-1">
-        <img src={logo} className="glarity--w-5 glarity--h-5 glarity--rounded-sm" />
-        <p className="glarity--text-sm glarity--font-semibold glarity--m-0 glarity--ml-1">
+    <div className="nectargpt--flex nectargpt--flex-col nectargpt--h-full nectargpt--popup">
+      <div className="nectargpt--mb-1 nectargpt--flex nectargpt--flex-row nectargpt--items-center nectargpt--px-1">
+        <img src={logo} className="nectargpt--w-5 nectargpt--h-5 nectargpt--rounded-sm" />
+        <p className="nectargpt--text-sm nectargpt--font-semibold nectargpt--m-0 nectargpt--ml-1">
           {APP_TITLE}
         </p>
       </div>
       {isChrome && !hideShortcutsTipQuery.isLoading && !hideShortcutsTipQuery.data && (
-        <p className="glarity--m-0 glarity--mb-1">
+        <p className="nectargpt--m-0 nectargpt--mb-1">
           Tip:{' '}
-          <a onClick={openShortcutsPage} className="glarity--underline glarity--cursor-pointer">
+          <a onClick={openShortcutsPage} className="nectargpt--underline nectargpt--cursor-pointer">
             setup shortcuts
           </a>{' '}
           for faster access.
