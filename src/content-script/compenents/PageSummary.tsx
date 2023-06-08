@@ -127,23 +127,23 @@ function PageSummary(props: Props) {
   return (
     <>
       {showCard ? (
-        <div className="nectargpt--card">
-          <div className="nectargpt--card__head ">
-            <div className="nectargpt--card__head--title">
-              <a href="https://nectargpt.app" rel="noreferrer" target="_blank">
+        <div className="glarity--card">
+          <div className="glarity--card__head ">
+            <div className="glarity--card__head--title">
+              <a href="https://glarity.app" rel="noreferrer" target="_blank">
                 <img src={logo} alt={APP_TITLE} /> {APP_TITLE}
               </a>{' '}
               <button
-                className={classNames('nectargpt--btn', 'nectargpt--btn__icon')}
+                className={classNames('glarity--btn', 'glarity--btn__icon')}
                 onClick={openOptionsPage}
               >
                 <GearIcon size={14} />
               </button>
             </div>
 
-            <div className="nectargpt--card__head--action">
+            <div className="glarity--card__head--action">
               <button
-                className={classNames('nectargpt--btn', 'nectargpt--btn__icon')}
+                className={classNames('glarity--btn', 'glarity--btn__icon')}
                 onClick={onSwitch}
               >
                 <XCircleFillIcon />
@@ -151,24 +151,24 @@ function PageSummary(props: Props) {
             </div>
           </div>
 
-          <div className="nectargpt--card__content">
+          <div className="glarity--card__content">
             {question ? (
-              <div className="nectargpt--container">
-                <div className="nectargpt--chatgpt">
+              <div className="glarity--container">
+                <div className="glarity--chatgpt">
                   <ChatGPTQuery question={question} />
                 </div>
               </div>
             ) : (
-              <div className="nectargpt--card__empty ">
+              <div className="glarity--card__empty ">
                 {!supportSummary ? (
                   'Sorry, the summary of this page is not supported.'
                 ) : (
                   <button
                     className={classNames(
-                      'nectargpt--btn',
-                      'nectargpt--btn__primary',
-                      // 'nectargpt--btn__large',
-                      'nectargpt--btn__block',
+                      'glarity--btn',
+                      'glarity--btn__primary',
+                      // 'glarity--btn__large',
+                      'glarity--btn__block',
                     )}
                     onClick={onSummary}
                     disabled={loading}
@@ -184,12 +184,12 @@ function PageSummary(props: Props) {
         show && (
           <button
             onClick={onSwitch}
-            className={classNames('nectargpt--btn', 'nectargpt--btn__launch', 'nectargpt--btn__primary')}
+            className={classNames('glarity--btn', 'glarity--btn__launch', 'glarity--btn__primary')}
           >
             <img
               src={logoWhite}
               alt={APP_TITLE}
-              className="nectargpt--w-5 nectargpt--h-5 nectargpt--rounded-sm"
+              className="glarity--w-5 glarity--h-5 glarity--rounded-sm"
             />
           </button>
         )

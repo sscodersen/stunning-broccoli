@@ -51,8 +51,8 @@ const ConfigPanel: FC<ConfigProps> = ({ config, models }) => {
 
   return (
     <>
-      <Card className="nectargpt--card">
-        <div className="nectargpt--flex nectargpt--flex-col nectargpt--gap-3">
+      <Card className="glarity--card">
+        <div className="glarity--flex glarity--flex-col glarity--gap-3">
           <Radio.Group value={tab} onChange={(v) => setTab(v as ProviderType)}>
             {!isSafari && (
               <>
@@ -69,12 +69,12 @@ const ConfigPanel: FC<ConfigProps> = ({ config, models }) => {
             <Radio value={ProviderType.GPT3}>
               OpenAI API
               <Radio.Desc>
-                <div className="nectargpt--flex nectargpt--flex-col nectargpt--gap-2">
+                <div className="glarity--flex glarity--flex-col glarity--gap-2">
                   <span>
                     OpenAI official API, more stable,{' '}
-                    <span className="nectargpt--font-semibold">charge by usage</span>
+                    <span className="glarity--font-semibold">charge by usage</span>
                   </span>
-                  <div className="nectargpt--flex nectargpt--flex-row nectargpt--gap-2 nectargpt--geist--select">
+                  <div className="glarity--flex glarity--flex-row glarity--gap-2 glarity--geist--select">
                     <Input
                       htmlType="text"
                       placeholder="api.openai.com"
@@ -105,7 +105,7 @@ const ConfigPanel: FC<ConfigProps> = ({ config, models }) => {
                       {...apiKeyBindings}
                     />
                   </div>
-                  <span className="nectargpt--italic nectargpt--text-xs">
+                  <span className="glarity--italic glarity--text-xs">
                     You can find or create your API key{' '}
                     <a
                       href="https://platform.openai.com/account/api-keys"

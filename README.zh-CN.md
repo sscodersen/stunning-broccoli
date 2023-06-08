@@ -1,4 +1,4 @@
-# # Nectargpt - Summary for Google/YouTube with ChatGPT
+# # Glarity - Summary for Google/YouTube with ChatGPT
 
 Chrome 浏览器扩展实现在 Google 搜索结果和 YouTube 视频旁边展示 ChatGPT 摘要，同时支持 Yahoo! JAPAN ニュース、PubMed、PMC、NewsPicks、Github、Nikkei、Bing、Google Patents, 以及任意网页的总结。
 
@@ -27,7 +27,7 @@ Chrome 浏览器扩展实现在 Google 搜索结果和 YouTube 视频旁边展�
 
 [Chrome 应用市场](https://chrome.google.com/webstore/detail/summary-for-google-with-c/cmnlolelipjlhfkhpohphpedmkfbobjc)
 
-[Firefox Add-ons 市场](https://addons.mozilla.org/zh-CN/firefox/addon/nectargpt/)
+[Firefox Add-ons 市场](https://addons.mozilla.org/zh-CN/firefox/addon/glarity/)
 
 ## 功能
 
@@ -121,8 +121,8 @@ Disable "Prevent sites from fingerprinting me based on my language preferences" 
 
 ### 扩展包
 
-- [Chromium](packages/Nectargpt-chromium.zip)
-- [Firefox](packages/Nectargpt-firefox.zip)
+- [Chromium](packages/Glarity-chromium.zip)
+- [Firefox](packages/Glarity-firefox.zip)
 
 ### Chrome
 

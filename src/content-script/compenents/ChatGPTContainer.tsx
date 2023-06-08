@@ -148,43 +148,43 @@ function ChatGPTContainer(props: Props) {
     <>
       <GeistProvider themeType={themeType}>
         <>
-          <div className="nectargpt--chatgpt">
-            <div className="nectargpt--header">
+          <div className="glarity--chatgpt">
+            <div className="glarity--header">
               <div>
                 <a
-                  href="https://nectargpt.app"
+                  href="https://glarity.app"
                   rel="noreferrer"
                   target="_blank"
-                  className="nectargpt--header__logo"
+                  className="glarity--header__logo"
                 >
                   <img src={logo} alt={APP_TITLE} />
                   {APP_TITLE}
                 </a>
-                <a href="javascript:;" className="nectargpt--header__logo" onClick={openOptionsPage}>
+                <a href="javascript:;" className="glarity--header__logo" onClick={openOptionsPage}>
                   <GearIcon size={14} />
                 </a>
 
                 {loading ? (
-                  <span className="nectargpt--header__logo">
-                    <Spinner className="nectargpt--icon--loading" />
+                  <span className="glarity--header__logo">
+                    <Spinner className="glarity--icon--loading" />
                   </span>
                 ) : (
-                  <a href="javascript:;" className="nectargpt--header__logo" onClick={onRefresh}>
+                  <a href="javascript:;" className="glarity--header__logo" onClick={onRefresh}>
                     <SyncIcon size={14} />
                   </a>
                 )}
               </div>
 
-              <div className="nectargpt--chatgpt__action"></div>
+              <div className="glarity--chatgpt__action"></div>
             </div>
 
-            <div className="nectargpt--main">
-              <div className="nectargpt--main__container">
+            <div className="glarity--main">
+              <div className="glarity--main__container">
                 {questionProps.question ? (
                   <>
                     {triggerMode === TriggerMode.Manually && !questionProps.currentTime ? (
                       <span
-                        className="nectargpt--link"
+                        className="glarity--link"
                         onClick={() => {
                           onRefresh()
                         }}
@@ -196,7 +196,7 @@ function ChatGPTContainer(props: Props) {
                     ) : (
                       <>
                         {loading && (
-                          <div className="nectargpt--main__loading">
+                          <div className="glarity--main__loading">
                             <Loading />
                           </div>
                         )}
@@ -233,15 +233,15 @@ function ChatGPTContainer(props: Props) {
             </div>
 
             {questionProps.question && currentTranscript && (
-              <div className="nectargpt--main">
-                <div className="nectargpt--main__header">
-                  <div className="nectargpt--main__header--title">
+              <div className="glarity--main">
+                <div className="glarity--main__header">
+                  <div className="glarity--main__header--title">
                     Transcript
                     {questionProps.langOptionsWithLink.length > 1 && (
                       <>
                         {' '}
                         <select
-                          className="nectargpt--select"
+                          className="glarity--select"
                           value={selectedOption}
                           onChange={handleChange}
                         >
@@ -257,7 +257,7 @@ function ChatGPTContainer(props: Props) {
                       </>
                     )}
                   </div>
-                  <div className="nectargpt--main__header--action">
+                  <div className="glarity--main__header--action">
                     <a href="javascript:;" onClick={copytSubtitle}>
                       {copied ? <CheckIcon size={14} /> : <CopyIcon size={14} />}
                     </a>
@@ -269,7 +269,7 @@ function ChatGPTContainer(props: Props) {
                 </div>
 
                 <div
-                  className="nectargpt--main__container nectargpt--main__container--subtitle"
+                  className="glarity--main__container glarity--main__container--subtitle"
                   style={{
                     display: transcriptShow ? 'block' : 'none',
                   }}
@@ -278,7 +278,7 @@ function ChatGPTContainer(props: Props) {
                     const { time, text } = v
 
                     return (
-                      <div className="nectargpt--subtitle" key={i}>
+                      <div className="glarity--subtitle" key={i}>
                         <div
                           className="subtitle--time"
                           onClick={() => {

@@ -1,24 +1,24 @@
-.nectargpt--container.gpt--light {
-  .nectargpt--chatgpt {
+.glarity--container.gpt--light {
+  .glarity--chatgpt {
     color: black;
     border-color: #e8e8e8;
     background-color: #f9f9f9;
   }
 
-  &.nectargpt--chatgpt--newspicks {
-    .nectargpt--chatgpt {
+  &.glarity--chatgpt--newspicks {
+    .glarity--chatgpt {
       color: black;
       border-color: #fff;
       background-color: #fff;
     }
 
-    .nectargpt--main {
+    .glarity--main {
       border-top-color: #eee;
     }
   }
 
-  &.nectargpt--chatgpt--bilibili {
-    .nectargpt--chatgpt {
+  &.glarity--chatgpt--bilibili {
+    .glarity--chatgpt {
       background: var(--bg3);
     }
   }

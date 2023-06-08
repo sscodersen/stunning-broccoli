@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  prefix: 'nectargpt--',
+  prefix: 'glarity--',
   corePlugins: {
     preflight: false,
   },

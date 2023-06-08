@@ -44,7 +44,7 @@ function ChatGPTTip(props: Props) {
                   ) : (
                     <>
                       <Divider />
-                      Login to the ChatGPT web application to use the Nectargpt Summary.
+                      Login to the ChatGPT web application to use the Glarity Summary.
                     </>
                   )}
                 </>
@@ -53,7 +53,7 @@ function ChatGPTTip(props: Props) {
           </Note>
 
           <Button
-            className="nectargpt--chatgpt--tips--close"
+            className="glarity--chatgpt--tips--close"
             iconRight={<XCircleFillIcon />}
             auto
             onClick={onClose}

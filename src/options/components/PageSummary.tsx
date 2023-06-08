@@ -75,7 +75,7 @@ function PageSummaryComponent(props: PageSummaryProps) {
 
   return (
     <>
-      <Text h3 className="nectargpt--mt-5">
+      <Text h3 className="glarity--mt-5">
         Page Summary
       </Text>
 
@@ -83,31 +83,31 @@ function PageSummaryComponent(props: PageSummaryProps) {
         <Card.Content>
           <Text
             h5
-            className="nectargpt--mb-0 nectargpt--flex nectargpt--flex-row nectargpt--items-center nectargpt--gap-1"
+            className="glarity--mb-0 glarity--flex glarity--flex-row glarity--items-center glarity--gap-1"
           >
             <Toggle
               initialChecked
               checked={pageSummaryEnable}
               onChange={onPageSummaryEnableChange}
             />{' '}
-            Show Nectargpt Icon
+            Show Glarity Icon
           </Text>
-          <Text className="nectargpt--mt-0" font="12px">
-            Once hidden, the Nectargpt icon will no longer appear on the page. However, you can open
+          <Text className="glarity--mt-0" font="12px">
+            Once hidden, the Glarity icon will no longer appear on the page. However, you can open
             the page summary by clicking on the browser extension icon.
           </Text>
         </Card.Content>
         <Divider />
         <Card.Content>
-          <Text h4 className="nectargpt--mb-0">
+          <Text h4 className="glarity--mb-0">
             Whitelist Sites
           </Text>
-          <Text className="nectargpt--mt-0" font="12px">
-            Only display the Nectargpt icon on these sites (one URL per line).
+          <Text className="glarity--mt-0" font="12px">
+            Only display the Glarity icon on these sites (one URL per line).
           </Text>
           <Spacer h={0.5} />
           <Textarea
-            placeholder="https://nectargpt.app
+            placeholder="https://glarity.app
 https://reddit.com"
             resize={'vertical'}
             value={pageSummaryWhitelist}
@@ -117,15 +117,15 @@ https://reddit.com"
         </Card.Content>
         <Divider />
         <Card.Content>
-          <Text h4 className="nectargpt--mb-0">
+          <Text h4 className="glarity--mb-0">
             Blacklist Sites
           </Text>
-          <Text className="nectargpt--mt-0" font="12px">
-            Do not display Nectargpt icon on these sites (one URL per line).
+          <Text className="glarity--mt-0" font="12px">
+            Do not display Glarity icon on these sites (one URL per line).
           </Text>
           <Spacer h={0.5} />
           <Textarea
-            placeholder="https://nectargpt.app
+            placeholder="https://glarity.app
 https://reddit.com"
             resize={'vertical'}
             value={pageSummaryBlacklist}

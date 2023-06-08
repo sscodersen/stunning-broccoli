@@ -1,4 +1,4 @@
-# Nectargpt - Summary for Google/YouTube with ChatGPT
+# Glarity - Summary for Google/YouTube with ChatGPT
 
 Chrome extension to view ChatGPT summaries alongside Google search results and YouTube videos, also supports Yahoo! ニュース、PubMed、PMC、NewsPicks、Github、Nikkei、 Bing、Google Patents,and any page summary.
 
@@ -27,7 +27,7 @@ Or You can try downloading the experience package ([https://github.com/sparticle
 
 [Add from Chrome Web Store](https://chrome.google.com/webstore/detail/summary-for-google-with-c/cmnlolelipjlhfkhpohphpedmkfbobjc)
 
-[Add from Mozilla Add-on Store](https://addons.mozilla.org/zh-CN/firefox/addon/nectargpt/)
+[Add from Mozilla Add-on Store](https://addons.mozilla.org/zh-CN/firefox/addon/glarity/)
 
 ## Features
 
@@ -121,8 +121,8 @@ Disable "Prevent sites from fingerprinting me based on my language preferences" 
 
 ### Packages
 
-- [Chromium](packages/Nectargpt-chromium.zip)
-- [Firefox](packages/Nectargpt-firefox.zip)
+- [Chromium](packages/Glarity-chromium.zip)
+- [Firefox](packages/Glarity-firefox.zip)
 
 ### Chrome
 

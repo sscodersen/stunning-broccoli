@@ -1,7 +1,7 @@
 @import 'light.scss';
 @import 'dark.scss';
 
-.nectargpt--container {
+.glarity--container {
   position: relative;
   z-index: 1;
   margin-bottom: 30px;
@@ -14,22 +14,22 @@
   max-width: 100%;
   pointer-events: all;
 
-  &.nectargpt--chatgpt--youtube {
+  &.glarity--chatgpt--youtube {
     width: var(--ytd-watch-flexy-sidebar-width);
     min-width: var(--ytd-watch-flexy-sidebar-min-width);
   }
 
-  &.nectargpt--full-container {
+  &.glarity--full-container {
     min-width: calc(100% - var(--rhs-margin));
     margin-right: var(--rhs-margin);
     margin-bottom: 10px;
   }
-  &.nectargpt--chatgpt--pubmed {
+  &.glarity--chatgpt--pubmed {
     width: calc(100% + 80px);
     max-width: calc(100% + 80px);
   }
 
-  .nectargpt--link {
+  .glarity--link {
     cursor: pointer;
     color: #065fd4;
 
@@ -38,7 +38,7 @@
     }
   }
 
-  .nectargpt--chatgpt {
+  .glarity--chatgpt {
     border: 1px solid;
     border-radius: 8px;
     padding: 6px 10px 0;
@@ -108,12 +108,12 @@
       }
     }
 
-    .nectargpt--chatgpt--header {
+    .glarity--chatgpt--header {
       margin-top: -42px !important;
     }
   }
 
-  .nectargpt--chatgpt--header {
+  .glarity--chatgpt--header {
     margin-top: -42px !important;
     margin-left: calc(100% - 58px);
     margin-bottom: 10px;
@@ -138,10 +138,10 @@
   }
 }
 
-.nectargpt--summary--highlight {
+.glarity--summary--highlight {
   color: red;
 }
-.nectargpt--header {
+.glarity--header {
   // position: relative;
   // z-index: 10;
   display: flex;
@@ -153,8 +153,8 @@
   cursor: pointer;
 }
 
-a.nectargpt--header__logo,
-span.nectargpt--header__logo {
+a.glarity--header__logo,
+span.glarity--header__logo {
   margin-right: 6px;
   height: 20px;
   color: #000;
@@ -173,18 +173,18 @@ span.nectargpt--header__logo {
   }
 }
 
-span.nectargpt--header__logo {
+span.glarity--header__logo {
   cursor: default;
 }
 
-.nectargpt--main {
+.glarity--main {
   position: relative;
   margin-left: -10px;
   margin-right: -10px;
   padding: 0 12px;
   border-top: 1px solid rgb(221, 221, 221);
 }
-.nectargpt--main__header {
+.glarity--main__header {
   position: relative;
   z-index: 20;
   display: flex;
@@ -199,30 +199,30 @@ span.nectargpt--header__logo {
     color: #333;
   }
 }
-.nectargpt--main__header--title {
+.glarity--main__header--title {
   font-weight: bold;
   cursor: pointer;
 }
 
-.nectargpt--main__header--icon {
+.glarity--main__header--icon {
   cursor: pointer;
 }
 
-.nectargpt--main__header--action {
+.glarity--main__header--action {
   a {
     display: inline-block;
     margin-left: 5px;
   }
 }
 
-.nectargpt--main__container {
+.glarity--main__container {
   position: relative;
   z-index: 30;
   padding: 10px 0 10px;
   font-size: 14px;
   color: #444;
 
-  &.nectargpt--main__container--subtitle {
+  &.glarity--main__container--subtitle {
     margin-right: -10px;
     padding-right: 10px;
     height: 200px;
@@ -231,7 +231,7 @@ span.nectargpt--header__logo {
     overflow-y: auto;
   }
 
-  .nectargpt--chatgpt--content {
+  .glarity--chatgpt--content {
     margin-right: -10px;
     padding-right: 10px;
     max-height: 260px;
@@ -240,7 +240,7 @@ span.nectargpt--header__logo {
     overflow-y: auto;
   }
 }
-.nectargpt--main__loading {
+.glarity--main__loading {
   position: absolute;
   z-index: 99;
   width: 100%;
@@ -248,7 +248,7 @@ span.nectargpt--header__logo {
   background-color: rgb(249, 249, 249);
 }
 
-.nectargpt--subtitle {
+.glarity--subtitle {
   display: flex;
   justify-content: left;
   align-items: baseline;
@@ -272,35 +272,35 @@ span.nectargpt--header__logo {
   }
 }
 
-.nectargpt--select {
+.glarity--select {
   width: 70px;
   border: 1px solid #bbb;
   border-radius: 4px;
 }
 
-.nectargpt--icon--loading {
+.glarity--icon--loading {
   display: inline-block !important;
   vertical-align: middle;
   transform: scale(0.7);
 }
 
-.nectargpt--text-xs {
+.glarity--text-xs {
   font-size: 12px;
   line-height: 1.6;
 }
-.nectargpt--mt-2 {
+.glarity--mt-2 {
   margin-top: 10px;
 }
 
-// nectargpt--chatgpt--tips
-.nectargpt--chatgpt--tips {
+// glarity--chatgpt--tips
+.glarity--chatgpt--tips {
   position: fixed;
   z-index: 100;
   right: 20px;
   top: 20px;
   width: 300px;
 
-  button.btn.nectargpt--chatgpt--tips--close {
+  button.btn.glarity--chatgpt--tips--close {
     position: absolute !important;
     z-index: 100;
     right: 5px;
@@ -313,19 +313,19 @@ span.nectargpt--header__logo {
 }
 
 // newspicks
-.nectargpt--chatgpt--newspicks {
+.glarity--chatgpt--newspicks {
   margin-bottom: 32px;
   background-color: #fff;
   border: none;
   border-radius: 0;
   box-shadow: 0 1px 4px #ddd;
 
-  .nectargpt--chatgpt {
+  .glarity--chatgpt {
     border: none;
     background: #fff;
     border-radius: 0;
 
-    .nectargpt--main__container {
+    .glarity--main__container {
       a {
         color: #337ab7;
 
@@ -337,62 +337,62 @@ span.nectargpt--header__logo {
   }
 }
 
-.nectargpt--geist--select {
+.glarity--geist--select {
   position: relative;
 }
 
 // nikkei
-.nectargpt--chatgpt--nikkei {
+.glarity--chatgpt--nikkei {
   flex-grow: inherit;
 }
 
 // google partents
-.nectargpt--chatgpt--googlePatents {
+.glarity--chatgpt--googlePatents {
   margin-bottom: 0;
 
-  .nectargpt--chatgpt {
+  .glarity--chatgpt {
     border: none;
     border-radius: 0;
   }
 }
 
 // bing
-.nectargpt--chatgpt--bing {
+.glarity--chatgpt--bing {
   margin-left: -20px;
   margin-right: -20px;
 }
 
 // Web Summary
-.nectargpt--summary {
+.glarity--summary {
   position: fixed;
   top: 160px;
   right: 15px;
   width: auto;
   z-index: 99999999999999;
 
-  .nectargpt--card {
+  .glarity--card {
     width: 360px;
   }
 }
 
 // Bilibili
-.nectargpt--chatgpt--bilibili {
+.glarity--chatgpt--bilibili {
   margin-top: 20px;
   margin-bottom: 20px;
 
-  .nectargpt--chatgpt {
+  .glarity--chatgpt {
     border-radius: 6px;
     border: none;
 
-    .nectargpt--main {
+    .glarity--main {
       border-top-color: var(--line_regular);
     }
   }
 }
 
 @media screen and (max-width: 600px) {
-  .nectargpt--summary {
-    .nectargpt--card {
+  .glarity--summary {
+    .glarity--card {
       width: calc(100vw - 30px);
     }
   }

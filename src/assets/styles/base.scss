@@ -10,14 +10,14 @@ $font-size-normal: 14px;
 $font-size-small: 12px;
 
 // card
-.nectargpt--card {
+.glarity--card {
   font-size: $font-size-normal;
   border: 1px solid #ddd;
   box-shadow: 0 3px 8px rgb(0 0 0 / 35%);
   border-radius: 6px !important;
   background: #fff;
 
-  .nectargpt--card__head {
+  .glarity--card__head {
     display: flex;
     justify-content: space-between;
     justify-items: center;
@@ -25,12 +25,12 @@ $font-size-small: 12px;
     border-bottom: 1px solid #eee;
     font-size: $font-size-large;
 
-    .nectargpt--card__head--title {
+    .glarity--card__head--title {
       display: inline-flex;
       align-items: center;
       font-weight: bold;
 
-      .nectargpt--btn {
+      .glarity--btn {
         margin-left: 4px;
       }
 
@@ -50,7 +50,7 @@ $font-size-small: 12px;
     }
   }
 
-  .nectargpt--card__content {
+  .glarity--card__content {
     position: relative;
     padding: 15px;
     color: #333;
@@ -60,15 +60,15 @@ $font-size-small: 12px;
     overflow-wrap: break-word;
     min-height: 110px;
 
-    .nectargpt--container {
+    .glarity--container {
       margin-bottom: 0;
 
-      .nectargpt--chatgpt {
+      .glarity--chatgpt {
         border: none;
       }
     }
 
-    .nectargpt--card__empty {
+    .glarity--card__empty {
       position: absolute;
       left: 50%;
       top: 50%;
@@ -82,14 +82,14 @@ $font-size-small: 12px;
       min-height: 70px;
     }
 
-    .nectargpt--container #gpt-answer.markdown-body.gpt-markdown .nectargpt--chatgpt--header {
+    .glarity--container #gpt-answer.markdown-body.gpt-markdown .glarity--chatgpt--header {
       margin: -13px -12px 0 0 !important;
     }
   }
 }
 
 // button
-.nectargpt--btn {
+.glarity--btn {
   margin: 0;
   padding: 8px 10px;
   line-height: 1;
@@ -112,7 +112,7 @@ $font-size-small: 12px;
     opacity: 0.9;
   }
 
-  &.nectargpt--btn__icon {
+  &.glarity--btn__icon {
     color: $secondary-color;
     padding: 0;
     border: none;
@@ -125,7 +125,7 @@ $font-size-small: 12px;
     // }
   }
 
-  &.nectargpt--btn__launch {
+  &.glarity--btn__launch {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,34 +146,34 @@ $font-size-small: 12px;
     }
   }
 
-  &.nectargpt--btn__primary {
+  &.glarity--btn__primary {
     color: #fff;
     background: $primary-color;
   }
 
-  &.nectargpt--btn__primary--ghost {
+  &.glarity--btn__primary--ghost {
     color: $primary-color;
     background: #fff;
     border: 1px solid $primary-color;
   }
 
-  &.nectargpt--btn__block {
+  &.glarity--btn__block {
     width: 100%;
   }
 
-  &.nectargpt--btn__large {
+  &.glarity--btn__large {
     font-size: $font-size-large;
     padding: 8px 16px;
   }
 
-  &.nectargpt--btn__small {
+  &.glarity--btn__small {
     font-size: $font-size-small;
     padding: 4px 8px;
   }
 }
 
 // text
-.nectargpt--subtitle {
+.glarity--subtitle {
   font-size: $font-size-small;
   color: #999 !important;
   font-weight: normal;
@@ -181,20 +181,20 @@ $font-size-small: 12px;
 
 // Dark
 @media (prefers-color-scheme: dark) {
-  .nectargpt--card {
+  .glarity--card {
     background: rgb(35, 36, 40);
     border-color: #444950;
     box-shadow: 0 3px 9px rgb(255 255 255 / 30%);
 
-    .nectargpt--card__head {
+    .glarity--card__head {
       border-bottom-color: #444950;
     }
 
-    .nectargpt--card__content,
-    .nectargpt--card__head {
+    .glarity--card__content,
+    .glarity--card__head {
       color: #ccc;
 
-      .nectargpt--card__head--title {
+      .glarity--card__head--title {
         a {
           color: #ccc;
         }
@@ -202,14 +202,14 @@ $font-size-small: 12px;
     }
   }
 
-  .nectargpt--btn {
+  .glarity--btn {
     border-color: #444950;
 
-    &.nectargpt--btn__primary {
+    &.glarity--btn__primary {
       border-color: #999;
     }
 
-    &.nectargpt--btn__icon {
+    &.glarity--btn__icon {
       color: #999;
     }
   }

@@ -12,7 +12,7 @@ interface Props {
   supportSites: Record<string, SearchEngine>
 }
 
-function EnableNectargpt(props: Props) {
+function EnableGlarity(props: Props) {
   const { enableSites, setEnableSites, allSites, supportSites } = props
   const { setToast } = useToasts()
   const [allSelect, setAllSelect] = useState(true)
@@ -46,10 +46,10 @@ function EnableNectargpt(props: Props) {
     <>
       {!isIOS && (
         <>
-          <Text h3 className="nectargpt--mt-5">
-            Enable/Disable Nectargpt
+          <Text h3 className="glarity--mt-5">
+            Enable/Disable Glarity
             <Text font="12px" my={0}>
-              You can enable/disable the Nectargpt Summary on the following website.
+              You can enable/disable the Glarity Summary on the following website.
             </Text>
           </Text>
 
@@ -58,11 +58,11 @@ function EnableNectargpt(props: Props) {
               <Checkbox.Group
                 value={enableSites}
                 onChange={onChangeSites}
-                className="nectargpt--support__sites"
+                className="glarity--support__sites"
               >
                 {Object.entries(supportSites).map(([k, v]) => {
                   return (
-                    <Checkbox key={k} value={v.siteValue} className="nectargpt--support__sites--item">
+                    <Checkbox key={k} value={v.siteValue} className="glarity--support__sites--item">
                       {v.siteName}
                     </Checkbox>
                   )
@@ -85,4 +85,4 @@ function EnableNectargpt(props: Props) {
   )
 }
 
-export default EnableNectargpt
+export default EnableGlarity
