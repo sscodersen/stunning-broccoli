@@ -1,6 +1,6 @@
 {
-  "name": "__MSG_appName__",
-  "description": "__MSG_appDesc__",
+  "name": "NectarGPT browsing assistant",
+  "description": "NectarGPT - AI browsing assistant",
   "default_locale": "en",
   "version": "2.2.0",
   "manifest_version": 3,
