@@ -17,10 +17,8 @@ Bing
 Google Patents
 Bilibili
 Any website
-Installation
-Add from Chrome Web Store
 
-Add from Mozilla Add-on Store
+Installation
 
 Features
 Supports Google search
